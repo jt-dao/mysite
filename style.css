@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -28,10 +27,9 @@ body {
     height: 76%;
     background-size: cover;
     background-position: left; 
-
     position: sticky;
-  top: 0;
-  z-index: 999;
+    top: 0;
+    z-index: 999;
 }
 
 .container {
@@ -51,6 +49,112 @@ background: linear-gradient(90deg, rgba(109,165,192,1) 0%, rgba(12,112,117,1) 20
     left: 0;
     top: 92px;
 }
+
+@keyframes animateBg {
+    0%,100%
+    {
+        transform:scale(1);
+    }
+    50%
+    {
+        transform:scale(1.2);
+    }
+}
+
+.stars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+    animation:  animate 5s linear infinite;
+}
+.stars::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 0.6;
+    }
+    70%
+    {
+        opacity: 0.2;
+
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1500px);
+        opacity: 0;
+
+    }
+    
+}
+.stars:nth-child(1){
+    top: 0;
+    right: -20px;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 1s;
+}
+
+.stars:nth-child(2){
+    top: 0;
+    right: 80px;
+    left:initial;
+    animation-delay:0.2s;
+    animation-duration: 3s;
+}
+
+.stars:nth-child(3){
+    top: 80px;
+    right: 0px;
+    left:initial;
+    animation-delay:0.8s ;
+    animation-duration: 2s;
+}
+
+.stars:nth-child(4){
+    top: 0;
+    right: 180px;
+    left:initial;
+    animation-delay:1.2s;
+    animation-duration: 1.5s;
+}
+
+.stars:nth-child(5){
+    top: 0;
+    right: 400px;
+    left:initial;
+    animation-delay:1.5s;
+    animation-duration: 2.5s;
+}
+
+.stars:nth-child(6){
+    top: 0;
+    right: 600px;
+    left:initial;
+    animation-delay:1s ;
+    animation-duration: 3s;
+}
+.stars:nth-child(7 ){
+    top: 300px;
+    right: 0px;
+    left:initial;
+    animation-delay:1s ;
+    animation-duration: 1.75s;
+}
+
 
 nav {
     display: flex;
@@ -126,13 +230,13 @@ li a{
   opacity: 0;
   line-height: 6vw;
   color: #6DA5C0;
-  animation: slideDown ease 0.75s forwards .2s;
+  animation: slideDown ease 1.5s forwards .2s;
 }
 
 .typing2 {
   color: white;
   text-align: right;
-  animation: slideRight ease-in-out 1s forwards 0.3s;
+  animation: slideRight ease-in-out 2.5s forwards 0.3s;
   margin-right: 5%;
   opacity: 0;
 }
@@ -141,7 +245,7 @@ li a{
   opacity: 0;
   color: #6DA5C0;
   text-align: right;
-  animation: slideUp ease 0.75s forwards .2s;
+  animation: slideUp ease 1.5s forwards .2s;
 }
 
 
@@ -179,7 +283,7 @@ li a{
 .pic {
   height: 100%;
   width: 93%;
-  animation: slideLeft ease-in-out 1s forwards 0.3s;
+  animation: slideLeft ease-in-out 1.5s forwards 0.3s;
   opacity: 0;
 }
 
