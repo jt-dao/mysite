@@ -811,6 +811,10 @@ div.even1:hover, div.even2:hover {
     margin-bottom: 5%;
   }
 
+    .stars{
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (max-height: 380px) {
