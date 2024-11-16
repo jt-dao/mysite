@@ -55,27 +55,41 @@
     </div>
     <div class="box" id="trans">
       <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
         <p class="tab-links" onclick="opentab('skills')">Skills</p>
       </div>
         <div class="tab-contents" id="skills">
           <ul>
-            <li><span>Languages</span><br>Python, Java, SQL, HTML, CSS, JavaScript</li>
+            <li><span>Languages</span><br>Python, Java, RISC-V, C, C++, SQL, HTML, CSS, JavaScript</li>
+            <li><span>Bench Tools</span><br>Oscilloscope, Multimeter, Waveform Generator, Power Supply</li>
             <li><span>Other</span><br>PCB Design, Embedded Programming, Arduino, MS Suite, 3D Printing, Woodworking</li>
           </ul>
         </div>
-        <div class="tab-contents" id="experience">
+        <div class="tab-contents active-tab" id="experience">
           <ul>
-            <li><span>2024: UL Solutions </span><br>Lab Intern - Technical SAR Testing</li>
-            <li><span>2023 - Present: UC Berkeley IEEE</span><br>Co-Director: Intro to Electronics & Robotics (DeCal, EE198) </li>
-            <li><span>2022</span><br>Cisco Extern</li>
+            <li><span>Summer 2024: UL Solutions </span><br>Intern - Wireless Testing</li>
+            <li><span>Fall 2023 - Present: UC Berkeley IEEE</span><br>Class Director - Intro to Electronics & Robotics (DeCal, EE198) </li>
+            <li><span>Summer 2022: Cisco</span><br>Extern</li>
           </ul>
         </div>
-        <div class="tab-contents active-tab" id="education">
+        <div class="tab-contents" id="education">
           <ul>
-            <li><span>2023 - 2026: UC Berkeley </span><br>Electrical Engineering and Computer Science</li>
-            <li id="courses"><span>Courses</span><br>Structure and Interpretation of Computer Programs (CS61A), Data Structures (CS61B), Designing Information Devices and Systems (EECS16A), Multivariable Calculus (Math 4A) </li>
+            <li><span>'26: University of California, Berkeley </span><br>Electrical Engineering and Computer Science</li>
+            <div class="row">
+              <div class="even1a">
+                <li style="font-size:2vw"><span><u>CS Courses</u></span><br></li>
+                <li style="font-size:2vw">Intro to Computer Architecture (CS61C)</li>
+                <li style="font-size:2vw">Data Structures (CS61B) </li>
+                <li style="font-size:2vw">Structure of Computer Programs (CS61A) </li>
+              </div>
+              <div class="even2a">
+                <li style="font-size:2vw"><span><u>EE Courses</u></span><br></li>
+                <li style="font-size:2vw">Designing Information Devices and Systems II (EECS 16B)</li>
+                <li style="font-size:2vw">Designing Information Devices and Systems I (EECS 16A) </li>
+              </div>
+            </div>
+            <p>Other: Physics for Engineers, Multivariable Calculus</p>
           </ul>
         </div>
     </div>
@@ -84,6 +98,25 @@
     <h1>Made with <b id="love">love.</b></h1>
     <h6>&nbsp &nbsp &nbsp &nbsp &nbsp(my projects)&nbsp &nbsp &nbsp &nbsp &nbsp<img id="lmao" src="images/hg.png"></h6>
     <div class="row">
+      <div class="even1">
+        <h2>Website</h2>
+        <p>Portfolio created with HTML, CSS, JS</p>
+        <img src="images/webss.png">
+          <li>Coded, designed, and developed by myself.</li>
+          <li>Created and implemented custom animations.</li>
+          <li>Included hidden "easter eggs" for a unique feel.</li>
+      </div>
+      <div class="even2">
+        <h2>F.E.R.N.</h2>
+        <p>LoRaWan + IoT fire alert relay network</p>
+        <span><img src="images/IMG_8952.jpg"><img src="images/square2.jpg"></span>
+          <li>Electronic sensor box detecting fallen utility poles.</li>
+          <li>Created a LoRaWan gateway to transmit cloud alerts.</li>
+          <li>Used MKRWAN 1310, MKR shield soldered breadboard, 6 axis accelerometer and CO2 sensor.</li>
+          <li>Evaluated to IP67 rating; tested efficacy > 1000x. </li>
+          <a class="inline" href="https://rb.gy/u69f1">Slides</a>
+          <a class="inline" href="https://www.youtube.com/watch?v=bxTWDYLn-_Q&ab_channel=JaythanDao">Demo Video</a>
+      </div>
       <div class="even1">
         <h2>Website</h2>
         <p>Portfolio created with HTML, CSS, JS</p>
