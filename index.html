@@ -1,186 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JT's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JT Dao - Embedded & Software Engineer</title>
+  <meta name="description" content="Portfolio of JT Dao, an embedded engineer building reliable software and hardware products." />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://api.fontshare.com/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c45e9613ef.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.logwork.com/widget/text.js"></script>
 </head>
-
 <body>
-  <div id="header">
-    <div class="container">
-      <nav id="headso">
-        <svg id="svgg" height="104" width="143"  fill="none"  xmlns="http://www.w3.org/2000/svg"> 
-          <path class="y" id="yy" d="M44.1029 48.1172C35.96 48.1172 41.8946 64.5058 45.207 59.5544C47.067 56.7739 45.9618 52.2792 45.7333 49.2046C45.6784 48.4655 46.7973 56.8243 47.2225 58.8124C49.8698 71.1916 55.6921 58.4868 58.4169 52.3773C61.1241 46.3072 58.5074 57.2165 58.25 58.71C56.9986 65.9696 56.0056 73.4157 54.0906 80.5353C52.8603 85.1095 50.9551 89.3518 49.4306 93.8148C48.9963 95.0859 47.7838 100.908 47.8002 99.8788C48.056 83.8165 58.259 67.8209 63.3979 52.953C67.845 40.0866 75.1723 28.7551 80.0098 16.1468C80.0867 15.9463 75.2476 24.9866 74.6565 28.7738C73.3081 37.4119 70.6891 45.8809 70.0349 54.6162C68.837 70.6134 72.2069 45.1924 74.143 56.9957C74.8857 61.524 78.6977 51.5259 79.7787 50.3688C80.8418 49.2309 80.9197 61.7146 81.3321 63.6226C83.5081 73.691 83.7226 61.0224 84.0793 57.6098C85.1551 47.3179 86.9394 36.4089 91.5765 27.0595C95.6256 18.8954 97.7452 12.9538 104.825 6.66698C112.381 -0.0433482 111.342 7.2281 110.011 13.9591C108.087 23.6883 106.009 32.6318 101.282 41.4519C97.0616 49.3261 91.3561 56.0618 88.5211 64.6461C85.7448 73.0526 100.755 49.9343 109.472 48.2451C113.957 47.3761 104.096 73.143 111.308 67.1536C114.744 64.3003 116.987 61.1939 121.103 63.7762C125.772 66.706 136.05 62.0773 140 59.4009" stroke="black" stroke-width="3.5" stroke-linecap="round"/>
-          <path class="z" id="zz" d="M57 36C67.2959 35.6932 77.7071 33.7886 88 33" stroke="black" stroke-width="3.5" stroke-linecap="round"/>
-          <path class="x" id="xx" d="M7.97547 19.7693C9.00638 21.5068 23.6981 18.8352 26.2839 19.0081C31.8697 19.3817 31.3498 27.3464 32.1049 31.2182C33.6416 39.0979 36.4873 54.1279 29.5033 60.4952C23.4194 66.0419 6.59716 61.5832 3 54.8468" stroke="black" stroke-width="3.5" stroke-linecap="round"/>
-        </svg>
-        <ul>
-          <b>
-            <li><a onclick="window.scrollTo(0, 0);" href="#home" class="third">Home</a></li>
-            <li><a href="#about"  class="third">About</a></li>
-            <li><a href="#signed" class="third">Projects</a></li>
-            <li><a href="#contact" class="third">Contact</a></li>
-          </b>
-        </ul>
+  <div class="page">
+    <header class="hero" id="home">
+      <nav class="nav">
+        <a class="logo" href="#home">JT DAO</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a class="button ghost nav-cta" href="mailto:jaythan.dao@berkeley.edu">Email</a>
       </nav>
-    </div>
-  </div>
-  <div class="row" id="row1">
-    <div class="column1">
-      <h1 class="typing1" style="font-size:5vw;">Hey, I'm</h1>
-      <h1 class="typing2" id="names" style="font-size:6.8vw">Jaythan Dao.</h1>
-      <h1 class="typing3" style="font-size:2.8vw">A student, maker, and innovator.</h1>
-    </div>
-    <div class="column2">
-      <img src="images/Untitled2.png" class="pic">
-    </div>
-  </div>
-  <div id="about">
-    <div class="box">
-      <div class="row">
-        <div class="c1"><img src="images/me1.png"></div>
-        <div class="c2">
-          <h1 class="sub-title">Who am I?</h1>
-          <p>I'm <span id="sanay">Jaythan Dao</span>, a UC Berkeley EECS student from the Bay Area. Passionate about engineering and committed to making a lasting impact, I create STEM projects with the goal of using technology to benefit those around me. </p>
-        </div>
-      </div>
-    </div>
-    <div class="box" id="trans">
-      <div class="tab-titles">
-        <p class="tab-links" onclick="opentab('education')">Education</p>
-        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-        <p class="tab-links" onclick="opentab('skills')">Skills</p>
-      </div>
-        <div class="tab-contents" id="skills">
-          <ul>
-            <li><span>Languages</span><br>Python, Java, RISC-V, C, C++, SQL, HTML, CSS, JavaScript</li>
-            <li><span>Bench Tools</span><br>Oscilloscope, Multimeter, Waveform Generator, Power Supply</li>
-            <li><span>Other</span><br>PCB Design, Embedded Programming, Arduino, MS Suite, 3D Printing, Woodworking</li>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>JT Dao</h1>
+          <p>Embedded engineer building and validating hardware, firmware, and test tooling.</p>
+          <ul class="hero-keys">
+            <li><span>Focus</span> Embedded systems, robotics, lab automation</li>
+            <li><span>Stack</span> STM32, Zephyr, Python, C/C++, RISC-V, Verilog</li>
+            <li><span>Base</span> Bay Area, CA · UC Berkeley EECS '27</li>
           </ul>
         </div>
-        <div class="tab-contents active-tab" id="experience">
-          <ul>
-            <li><span>Summer 2024: UL Solutions </span><br>Intern - Wireless Testing</li>
-            <li><span>Fall 2023 - Present: UC Berkeley IEEE</span><br>Class Director - Intro to Electronics & Robotics (DeCal, EE198) </li>
-            <li><span>Summer 2022: Cisco</span><br>Extern</li>
+        <aside class="hero-side">
+          <h2>Current</h2>
+          <ul class="hero-list">
+            <li>Hardware engineer intern, ASML Reliability Lab (Summer '25)</li>
+            <li>Robotics researcher, Berkeley Biomimetic Millisystems Lab</li>
+            <li>Course director, Berkeley IEEE electronics & robotics (EE 198)</li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about" id="about">
+        <div class="section-header">
+          <span class="eyebrow">About</span>
+          <h2>Education & Skills</h2>
+          <p>UC Berkeley EECS '27 · hands-on with firmware, robotics, and validation labs.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-bio">
+            <ul class="plain-list">
+              <li><strong>UC Berkeley – Electrical Engineering & Computer Science</strong> (expected Spring '27). Coursework: digital design & ICs (FPGA lab), machine learning, advanced computer architecture, signals, circuits, data structures, discrete math.</li>
+              <li>Teach: designed and ran Berkeley IEEE's lab-based robotics course (EE 198) for 4+ semesters.</li>
+              <li>Programs: Theta Tau (Vice Regent), Visa Upskill Tech Cohort, Cisco Extern.</li>
+            </ul>
+          </div>
+          <ul class="fact-grid">
+            <li><span>Languages</span>Python, C/C++, RISC-V ASM, Verilog, 8051 ASM, Java, Chisel, Scala, SQL, JavaScript</li>
+            <li><span>Platforms</span>STM32, Xilinx PYNQ-Z1, Zephyr, Arduino, ESP-32, LTSpice, OrCad, KiCad, BitBucket, Git</li>
+            <li><span>Bench</span>Microcontrollers, soldering, spectrum analyzer, oscilloscope, multimeter, waveform generator, power supplies</li>
+            <li><span>Focus Areas</span>Robotics, hardware validation, lab automation, embedded tooling</li>
           </ul>
         </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>'26: University of California, Berkeley </span><br>Electrical Engineering and Computer Science</li>
-            <div class="row">
-              <div class="even1a">
-                <li style="font-size:2vw"><span><u>CS Courses</u></span><br></li>
-                <li style="font-size:2vw">Intro to Computer Architecture (CS61C)</li>
-                <li style="font-size:2vw">Data Structures (CS61B) </li>
-                <li style="font-size:2vw">Structure of Computer Programs (CS61A) </li>
-              </div>
-              <div class="even2a">
-                <li style="font-size:2vw"><span><u>EE Courses</u></span><br></li>
-                <li style="font-size:2vw">Designing Information Devices and Systems II (EECS 16B)</li>
-                <li style="font-size:2vw">Designing Information Devices and Systems I (EECS 16A) </li>
-              </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-header">
+          <span class="eyebrow">Experience</span>
+          <h2>Recent roles.</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <header>
+              <h3>Hardware Engineer Intern · ASML Reliability Lab</h3>
+              <span>May 2025 – Aug 2025 · San Jose, CA</span>
+            </header>
+            <ul>
+              <li>Built lab automation projects improving reliability test workflows and instrumentation.</li>
+              <li>Integrated nine spectrum-analyzer profiles into a Python/Tk GUI with trigger control.</li>
+              <li>Controlled instruments through GPIB/PyVISA with configurable span, rate, and resolution.</li>
+              <li>Implemented assembly SPI bit-banging to move a digital trimmer from 8- to 10-bit output.</li>
+              <li>Designed OrCad evaluation circuits and derived op-amp gains to qualify potentiometer outputs.</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <header>
+              <h3>Robotics / EECS Researcher · Berkeley Biomimetic Millisystems Lab</h3>
+              <span>Jan 2025 – Present · Berkeley, CA</span>
+            </header>
+            <ul>
+              <li>Designed a 2-layer PCB (250+ components) for UCSF endonasal surgical robot evaluation.</li>
+              <li>Ran PCB bring-up, rework, and troubleshooting across power, signal, and firmware systems.</li>
+              <li>Implemented power regulation network: buck converters, transient suppression, no backfeed.</li>
+              <li>Automated validation for 32+ regulators, sensors, valves, and steppers, cutting test time 15%.</li>
+              <li>Developed STM32 firmware with USB, I2C, SPI; used Zephyr DeviceTree/Kconfig and Twister tests.</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <header>
+              <h3>Technical Wireless Intern · UL Solutions</h3>
+              <span>May 2024 – Jul 2024 · Fremont, CA</span>
+            </header>
+            <ul>
+              <li>Automated wireless transmission tests with Python and robotic equipment against FCC/ICC specs.</li>
+              <li>Captured SAR results and RF maps using DASY6 and callbox suites across 5G, LTE, 802.11.</li>
+              <li>Delivered 16+ tests per day during peak season, maintaining documentation and compliance.</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <header>
+              <h3>Course Director · UC Berkeley IEEE (EE 198)</h3>
+              <span>Aug 2023 – Dec 2024 · Berkeley, CA</span>
+            </header>
+            <ul>
+              <li>Developed and taught an accredited electronics & robotics course for 50+ students each term.</li>
+              <li>Produced C/C++ examples, firmware boilerplate, and DFS/BFS robotics labs.</li>
+              <li>Delivered $15/unit robot kits with custom PCBs aligned to industry build standards.</li>
+            </ul>
+          </article>
+          <article class="experience-item">
+            <header>
+              <h3>Independent Engineering Researcher</h3>
+              <span>Nov 2019 – Jul 2022 · San Jose, CA</span>
+            </header>
+            <ul>
+              <li>Awarded at California Science & Engineering Fair (5th) and Synopsys Fair (two-time 1st).</li>
+              <li>Built IoT water meter (Arduino, custom PCB, SMS/Twilio) and electro-pneumatic lifting tool.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-header">
+          <span class="eyebrow">Projects</span>
+          <h2>Selected builds.</h2>
+        </div>
+        <div class="card-grid projects-grid">
+          <article class="project-card">
+            <div class="project-tags">
+              <span class="chip">RISC-V</span>
+              <span class="chip">Logisim</span>
             </div>
-            <p>Other: Physics for Engineers, Multivariable Calculus</p>
-          </ul>
-        </div>
-    </div>
-  </div>
-  <div class="box" id="signed">
-    <h1>Made with <b id="love">love.</b></h1>
-    <h6>&nbsp &nbsp &nbsp &nbsp &nbsp(my projects)&nbsp &nbsp &nbsp &nbsp &nbsp<img id="lmao" src="images/hg.png"></h6>
-    <div class="row">
-      <div class="even1">
-        <h2>Website</h2>
-        <p>Portfolio created with HTML, CSS, JS</p>
-        <img src="images/webss.png">
-          <li>Coded, designed, and developed by myself.</li>
-          <li>Created and implemented custom animations.</li>
-          <li>Included hidden "easter eggs" for a unique feel.</li>
-      </div>
-      <div class="even2">
-        <h2>F.E.R.N.</h2>
-        <p>LoRaWan + IoT fire alert relay network</p>
-        <span><img src="images/IMG_8952.jpg"><img src="images/square2.jpg"></span>
-          <li>Electronic sensor box detecting fallen utility poles.</li>
-          <li>Created a LoRaWan gateway to transmit cloud alerts.</li>
-          <li>Used MKRWAN 1310, MKR shield soldered breadboard, 6 axis accelerometer and CO2 sensor.</li>
-          <li>Evaluated to IP67 rating; tested efficacy > 1000x. </li>
-          <a class="inline" href="https://rb.gy/u69f1">Slides</a>
-          <a class="inline" href="https://www.youtube.com/watch?v=bxTWDYLn-_Q&ab_channel=JaythanDao">Demo Video</a>
-      </div>
-      <div class="even1">
-        <h3>ConveniMeterReader</h3>
-        <p>Arduino IoT smart water meter reader</p>
-        <span><img src="images/cmrimg.JPG"><img src="images/square.jpg"></span>
-        <li>Wirelessly tracks water usage data in real-time.</li>
-        <li>Photographs meter face, compresses image, transmits through SMS to the cloud where data is processed.</li>
-        <li>Used MKRGSM, custom-designed PCB, 12MP cam.</li>
-        <li>IP67 rated; 12yr battery life; tested efficacy 2,800x. </li>
-        <div class="tooltip" style="font-size:2vw">🏆🏆🏆🏆🏆🏆
-          <span class="tooltiptext">
-            <p> 5th Place, Calif. Science & Engineering Fair</p>
-            <p> 1st Place, Synopsys County Science Fair</p>
-            <p> 1st Place $150, Valley Water Awards HS</p>
-            <p> $50, US Navy/Marines medal & certificate </p>
-            <p> Certificate of Achievement, Ricoh USA, Inc</p>
-            <p> Letter, Environment Protection Agency	</p>
-          </span>
-        </div>
-        <a class="inline" href="https://docs.google.com/presentation/d/1XeGvnMrkuweRrEzKC918s6qJS23TD5gN-4NY_v1xgeQ/edit?usp=sharing">Slides</a>
-        <a class="inline" href="https://youtu.be/wf8FKwMM9lA">Demo Video</a>
-      </div>
-      <div class="even2">
-        <h2>GeckoHands</h2>
-        <p>Vacuum suction lifting assistance device</p>
-        <span><img src="images/geckoimg.jpg"><img id="cmrimgg" src="images/logoslist.jpg"></span>
-        <li>Mobile way to assist & improve grip when lifting items.</li>
-        <li>Suction attaches to sides of items: capacity of ~60lbs.</li>
-        <li>Light/portable enough to use quickly, can handle many everyday shipping containers or other types of packages.</li>
-        <li>Electrical pump provides constant suction; no leakage</li>
-        <div class="tooltip" style="font-size:2vw">🏆🏆
-          <span class="tooltiptext" id="geckott">
-            <p> Qualified, Calif. Science & Engineering Fair</p>
-            <p> 1st Place, Synopsys County Science Fair</p>
-          </span>
-        </div>
-        <a class="inline" href="https://docs.google.com/presentation/d/1kvsrsC7RSFv0RrYwb_m1D2PMba40rc8yyFXZ1gkKOdQ/edit?usp=sharing">Slides</a>
-        <a class="inline" href="https://youtu.be/qjWeCOOtvZw">Demo Video</a>
-      </div>
-    </div>
-  </div>
-  <div id="contact">
-    <div class="box" id="final">
-      <h1>
-        Let's connect.
-      </h1>
-          <h3><span>
-            </span>
-            <a href="https://www.linkedin.com/in/jaythan-dao/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/jt-dao/"><i class="fa-brands fa-square-github"></i></a>
-            <a href="https://www.instagram.com/jaythan.jt.dao"><i class="fa-brands fa-square-instagram"></i></a>
-          </h3>
+            <h3>Pipelined RISC-V CPU</h3>
+            <p class="project-summary">Simulated RISC-V core with full pipeline control and hazard handling.</p>
+            <ul class="project-meta">
+              <li>Implemented 40+ I/R/B/S/J instructions with ALU, register file, and control modules.</li>
+              <li>Added hazard detection, forwarding, and pipeline stalls to maintain throughput.</li>
+              <li>Built verification harness to step through instruction mixes and confirm register state.</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="mailto:jaythan.dao@berkeley.edu">Details on request</a>
+            </div>
+          </article>
 
-          <h2>
-            <span class="time"></span> - 
-            <a href="mailto:jaythan.dao@berkeley.edu">jaythan.dao@berkeley.edu</a>
-            <span class="stars"></span> 
-            <span class="stars"></span> 
-            <span class="stars"></span> 
-            <span class="stars"></span> 
-            <span class="stars"></span> 
-          </h2>
-    </div>
-  </div>
+          <article class="project-card">
+            <div class="project-tags">
+              <span class="chip">RISC-V</span>
+              <span class="chip">ML</span>
+            </div>
+            <h3>Handwriting Classification</h3>
+            <p class="project-summary">Ran MNIST digit recognition directly on a RISC-V pipeline.</p>
+            <ul class="project-meta">
+              <li>Ported neural network math (ReLU, matrix multiplication, argmax) into RISC-V assembly.</li>
+              <li>Optimized memory layout and dot products to fit pipeline constraints.</li>
+              <li>Produced repeatable accuracy across dataset batches with deterministic execution.</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="mailto:jaythan.dao@berkeley.edu">Details on request</a>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <div class="project-tags">
+              <span class="chip">IoT</span>
+              <span class="chip">Custom PCB</span>
+            </div>
+            <h3>Water Meter & Lifting Tools</h3>
+            <p class="project-summary">Award-winning smart meter retrofit and electro-pneumatic lifting assist.</p>
+            <ul class="project-meta">
+              <li>Delivered Arduino IoT meter with SMS/Twilio reporting and custom PCB.</li>
+              <li>Built electro-pneumatic lifting tool with handheld controls and safety interlocks.</li>
+              <li>Recognized at California Science & Engineering Fair and Synopsys Science Fair.</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="mailto:jaythan.dao@berkeley.edu">Awards & docs</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack" id="stack">
+        <div class="section-header">
+          <span class="eyebrow">Stack</span>
+          <h2>Tooling I reach for.</h2>
+        </div>
+        <div class="card-grid skills-grid">
+          <article class="skill-card">
+            <h3>Firmware</h3>
+            <p>Bootloaders, bring-up, RTOS scheduling, OTA updates.</p>
+            <ul>
+              <li>STM32, NRF52, ESP32</li>
+              <li>FreeRTOS, Zephyr, bare-metal</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Hardware</h3>
+            <p>Layout, RF-aware routing, manufacturing packages, validation.</p>
+            <ul>
+              <li>KiCad, Altium</li>
+              <li>DFM, signal integrity, test jigs</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Software</h3>
+            <p>APIs, dashboards, automation around hardware programs.</p>
+            <ul>
+              <li>TypeScript, React, Next.js</li>
+              <li>Node, Python, data pipelines</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tooling</h3>
+            <p>CI/CD, hardware-in-the-loop, instrumentation, docs.</p>
+            <ul>
+              <li>PlatformIO, GitHub Actions</li>
+              <li>Grafana, Influx, Notion</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card">
+          <span class="eyebrow">Contact</span>
+          <h2>jaythan.dao@berkeley.edu</h2>
+          <p>Quickest reply via email. Also on LinkedIn and GitHub.</p>
+          <div class="contact-actions">
+            <div class="contact-links">
+              <a class="text-link" href="https://www.linkedin.com/in/jaythan-dao/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="text-link" href="https://github.com/jt-dao/" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 JT Dao. Currently open to embedded firmware &amp; full-stack hardware roles.</p>
+    </footer>
+  </div>
 </body>
-<script src="test.js"></script>
 </html>
