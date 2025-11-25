@@ -46,7 +46,7 @@ function opentab(tabname) {
 function over() {
     this.timeout = window.setTimeout(function () {
         document.getElementById("names").style.color = "#0FFF50"
-        document.getElementById("names").innerHTML = '"JT" Dao'
+        document.getElementById("names").innerHTML = "Jaythan Dao"
     }, 4000)
   }
   

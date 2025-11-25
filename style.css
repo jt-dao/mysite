@@ -193,6 +193,16 @@ ul {
   margin-bottom: 0.35rem;
 }
 
+.white-block {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  background: #fff;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+}
+
 .hero-actions {
   margin-top: 2rem;
   display: flex;
@@ -202,7 +212,7 @@ ul {
 
 .hero-side {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.2rem;
   align-content: start;
 }
 
@@ -212,6 +222,19 @@ ul {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text);
+}
+
+.hero-side h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.hero-segment {
+  display: grid;
+  gap: 0.55rem;
 }
 
 .hero-list {
