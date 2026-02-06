@@ -35,7 +35,7 @@ a:hover {
 }
 
 .page {
-  max-width: 640px;
+  max-width: 704px;
   margin: 0 auto;
   padding: 4rem 1.5rem 3rem;
 }
@@ -153,7 +153,7 @@ a.date:hover {
   background: var(--border);
   color: var(--muted);
   border-radius: 3px;
-  margin-left: 0.4rem;
+  margin-right: 0;
   text-transform: lowercase;
   font-weight: 400;
   vertical-align: middle;
@@ -163,6 +163,37 @@ a.date:hover {
 a.link-tag:hover {
   background: var(--text);
   color: var(--bg);
+}
+
+/* Stack tags (course tech stack pills) */
+.entry-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.title-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.stack-tags {
+  display: inline-flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.stack-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 999px;
+  text-transform: lowercase;
+  line-height: 1.2;
 }
 
 footer {
@@ -175,6 +206,46 @@ footer p {
   margin: 0;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+/* Writeups pages */
+.topnav {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.prose {
+  color: var(--text);
+  max-width: 75ch;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.prose h2 {
+  margin-top: 2rem;
+}
+
+.meta {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .collapsible-header {
