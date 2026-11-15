@@ -14,14 +14,32 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   margin: 0;
   font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   line-height: 1.6;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
+}
+
+#space-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -64,6 +82,11 @@ h1 {
 
 .contact a:hover {
   color: var(--text);
+}
+
+.resume-links {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .sep {

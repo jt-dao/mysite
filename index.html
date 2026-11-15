@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <canvas id="space-bg" aria-hidden="true"></canvas>
   <div class="page">
     <header>
       <h1>Jaythan Dao</h1>
@@ -20,6 +21,11 @@
         <a href="https://github.com/jt-dao" target="_blank">GitHub</a>
       </p>
       <p class="tagline">UC Berkeley EECS '27</p>
+      <p class="contact resume-links">
+        <a href="resumes/Resume_DaoJaythan.pdf" target="_blank" rel="noopener">Resume (Digital Design)</a>
+        <span class="sep">·</span>
+        <a href="resumes/Resume_DaoJaythan_HWE.pdf" target="_blank" rel="noopener">Resume (Hardware)</a>
+      </p>
     </header>
 
     <section>
@@ -27,10 +33,10 @@
       <ul class="entries">
         <li>
           <div class="entry-header">
-            <span class="title">Incoming Software Engineer Intern · <span class="redacted"></span></span>
-            <span class="date">Summer 2026</span>
+            <span class="title">Software Engineer Intern · SpaceX</span>
+            <span class="date">May 2026 – Aug 2026</span>
           </div>
-          <p>annoucement soon...</p>
+          <p>Flight software, embedded development, and hardware-in-the-loop testing for mission-critical vehicle electronics. FPGA Ethernet debugging, phased-array bring-up, telemetry firmware, and fault recovery.</p>
         </li>
         <li>
           <div class="entry-header">
@@ -38,7 +44,7 @@
             <span class="date">May 2025 – Aug 2025</span>
           </div>
           <p>Assembly SPI protocols, OrCad circuit design, GPIB/PyVISA instrument control.</p>
-          <a href="writeups/asml.html" class="date">Full Review →</a>
+          <a href="writeups/in-progress.html" class="date">Full Review →</a>
         </li>
         <li>
           <div class="entry-header">
@@ -46,7 +52,7 @@
             <span class="date">Jan 2025 – Present</span>
           </div>
           <p>2-layer robotics PCB design, STM32 firmware (USB, I2C, SPI), automated validation.</p>
-          <a href="writeups/bml.html" class="date">Full Review →</a>
+          <a href="writeups/in-progress.html" class="date">Full Review →</a>
         </li>
         <li>
           <div class="entry-header">
@@ -81,7 +87,7 @@
                 <span class="stack-tag">systemverilog</span>
               </div>
             </div>
-            <a href="writeups/eecs251b.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>Graduate Digital Integrated Circuits and Systems</p>
         </li>
@@ -96,7 +102,7 @@
                 <!-- <span class="stack-tag">cmos</span> -->
               <!-- </div> -->
             </div>
-            <a href="writeups/eecs151.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>Digital Design and Integrated Circuits</p>
         </li>
@@ -112,7 +118,7 @@
                 <span class="stack-tag">cadence</span>
               </div>
             </div>
-            <a href="writeups/eecs151la.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>ASIC Laboratory</p>
         </li>
@@ -128,7 +134,7 @@
                 <span class="stack-tag">vivado</span>
               </div>
             </div>
-            <a href="writeups/eecs151lb.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>FPGA Laboratory</p>
         </li>
@@ -145,7 +151,7 @@
                 <span class="stack-tag">numpy</span>
               </div>
             </div>
-            <a href="writeups/cs189.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>Machine Learning</p>
         </li>
@@ -161,7 +167,7 @@
                 <span class="stack-tag">risc-v</span>
               </div>
             </div>
-            <a href="writeups/cs152.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>Computer Architecture and Engineering</p>
         </li>
@@ -178,7 +184,7 @@
                 <span class="stack-tag">mos</span>
               </div>
             </div>
-            <a href="writeups/ee105.html" class="date">full review →</a>
+            <a href="writeups/in-progress.html" class="date">full review →</a>
           </div>
           <p>Microelectronic Devices and Circuits</p>
         </li>
@@ -317,6 +323,76 @@
     </footer>
   </div>
   <script>
+    (function spaceScroll() {
+      const canvas = document.getElementById('space-bg');
+      const ctx = canvas.getContext('2d');
+      let w, h, dpr;
+      const STAR_COUNT = 220;
+      const stars = [];
+
+      function resize() {
+        dpr = window.devicePixelRatio || 1;
+        w = canvas.width = window.innerWidth * dpr;
+        h = canvas.height = window.innerHeight * dpr;
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+      }
+      function makeStar() {
+        return {
+          x: (Math.random() - 0.5) * w,
+          y: (Math.random() - 0.5) * h,
+          z: Math.random() * w,
+          pz: 0,
+        };
+      }
+      resize();
+      for (let i = 0; i < STAR_COUNT; i++) stars.push(makeStar());
+
+      let lastScroll = window.scrollY;
+      let warp = 0;
+      window.addEventListener('scroll', () => {
+        const delta = window.scrollY - lastScroll;
+        lastScroll = window.scrollY;
+        warp += delta * 0.6;
+      }, { passive: true });
+      window.addEventListener('resize', resize);
+
+      function frame() {
+        ctx.fillStyle = 'rgba(10, 10, 10, 0.35)';
+        ctx.fillRect(0, 0, w, h);
+        const cx = w / 2, cy = h / 2;
+        const speed = 1.2 + warp;
+        warp *= 0.9;
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 1 * dpr;
+        for (const s of stars) {
+          s.pz = s.z;
+          s.z -= speed;
+          if (s.z < 1) {
+            s.x = (Math.random() - 0.5) * w;
+            s.y = (Math.random() - 0.5) * h;
+            s.z = w;
+            s.pz = s.z;
+          }
+          const k = 128 / s.z;
+          const pk = 128 / s.pz;
+          const x = s.x * k + cx;
+          const y = s.y * k + cy;
+          const px = s.x * pk + cx;
+          const py = s.y * pk + cy;
+          const alpha = Math.min(1, (w - s.z) / w + 0.1);
+          ctx.globalAlpha = alpha;
+          ctx.beginPath();
+          ctx.moveTo(px, py);
+          ctx.lineTo(x, y);
+          ctx.stroke();
+        }
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    })();
+
     function toggleLowerDivision() {
       const content = document.getElementById('lowerDivisionCollapse');
       const icon = event.currentTarget.querySelector('.collapse-icon');
