@@ -28,15 +28,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#space-bg {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
 .page {
   position: relative;
   z-index: 1;
@@ -82,11 +73,6 @@ h1 {
 
 .contact a:hover {
   color: var(--text);
-}
-
-.resume-links {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
 }
 
 .sep {
